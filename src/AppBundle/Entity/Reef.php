@@ -26,9 +26,9 @@ class Reef
     /**
      * @var integer
      *
-     * @ORM\Column(name="area", type="integer")
+     * @ORM\Column(name="length", type="integer")
      */
-    private $area;
+    private $length;
     /**
      * Get id
      *
@@ -59,23 +59,23 @@ class Reef
         return $this->name;
     }
     /**
-     * Set area
+     * Set length
      *
-     * @param integer $area
+     * @param integer $length
      * @return Reef
      */
-    public function setArea($area)
+    public function setLength($length)
     {
-        $this->area = $area;
+        $this->length = $length;
         return $this;
     }
     /**
-     * Get area
+     * Get length
      *
      * @return integer 
      */
-    public function getArea()
+    public function getLength()
     {
-        return $this->area;
+        return $this->length;
     }
 }
