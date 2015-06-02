@@ -3,6 +3,9 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 /**
  * Reef
+ *
+ * @ORM\Table()
+ * @ORM\Entity
  */
 class Reef
 {
