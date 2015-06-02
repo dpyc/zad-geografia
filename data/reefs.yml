@@ -1,0 +1,8 @@
+#
+# Klasa: Reef
+# najdłuższe rafy koralowe (długość w km)
+#
+
+- { name: "Australia", area: 2000 }
+- { name: "Egypt", area: 680 }
+- { name: "Atol", area: 500 }
