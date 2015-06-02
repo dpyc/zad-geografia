@@ -16,7 +16,7 @@ class LoadReefs implements FixtureInterface
         foreach ($yml as $item) {
             $reef = new Reef();
             $reef->setName($item['name']);
-            $reef->setLength($item['area']);
+            $reef->setLength($item['length']);
             $manager->persist($reef);
         }
         $manager->flush();

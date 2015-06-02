@@ -1,11 +1,14 @@
 <?php
+
 namespace AppBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Reef
  *
  * @ORM\Table()
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="AppBundle\Entity\ReefRepository")
  */
 class Reef
 {
@@ -17,18 +20,22 @@ class Reef
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
     /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
      */
     private $name;
+
     /**
      * @var integer
      *
      * @ORM\Column(name="length", type="integer")
      */
     private $length;
+
+
     /**
      * Get id
      *
@@ -38,6 +45,7 @@ class Reef
     {
         return $this->id;
     }
+
     /**
      * Set name
      *
@@ -47,8 +55,10 @@ class Reef
     public function setName($name)
     {
         $this->name = $name;
+
         return $this;
     }
+
     /**
      * Get name
      *
@@ -58,6 +68,7 @@ class Reef
     {
         return $this->name;
     }
+
     /**
      * Set length
      *
@@ -67,8 +78,10 @@ class Reef
     public function setLength($length)
     {
         $this->length = $length;
+
         return $this;
     }
+
     /**
      * Get length
      *
